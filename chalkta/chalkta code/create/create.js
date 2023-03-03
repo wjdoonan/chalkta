@@ -1,4 +1,4 @@
-import fileFunctions from '../fileSystem.js'
+const fileFunctions = require('../fileSystem.js')
 
 const create = {
     createDataBase(dataBasename) {

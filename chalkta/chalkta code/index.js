@@ -1,3 +1,3 @@
-import create from './create/create.js';
+const create = require('./create/create.js')
 
 create.create.createDatabase('DB')
