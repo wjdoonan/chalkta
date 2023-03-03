@@ -1,3 +1,3 @@
-const create = require('./create/create.js')
+import create from "./create/create.js"
 
-create.create.createDatabase('DB')
+create.createTable('DB.json', 'atable')

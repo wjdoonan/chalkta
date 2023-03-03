@@ -1,9 +1,15 @@
 import fs from 'fs'
 
-const fileFunctions = {
+const FF = {
     createfile(name) {
-        fs.append(name, '{}')
+        fs.appendFileSync(name + '.json', '{"data": {}}')
+    },
+    readFile(name) {
+        fs.readFileSync(name)
+    },
+    saveFile(name, data) {
+        fs.writeFileSync(name, data)
     }
 }
 
-export default fileFunctions
+export default FF
