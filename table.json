@@ -1,0 +1,15 @@
+{
+    "Template": {
+        "chalk": [
+            [],
+            {
+                "index": 1
+            }
+        ],
+        "data": {
+            "type": "table",
+            "numOfCols": 1,
+            "name": ""
+        }
+    }
+}

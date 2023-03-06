@@ -1,0 +1,24 @@
+{
+    "DBta": {
+        "Chalks": 1
+    },
+    "data": {
+        "chalkName": {
+            "chalk": [
+                [
+                    "name",
+                    "date",
+                    "num"
+                ],
+                {
+                    "index": 1
+                }
+            ],
+            "data": {
+                "type": "table",
+                "numOfCols": 1,
+                "name": "atable"
+            }
+        }
+    }
+}
