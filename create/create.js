@@ -6,19 +6,34 @@ const create = {
         FF.createfile(dataBasename)
     },
     createChalk(type, dataBaseName, chalkName, colums) {
-        const database = fs.readFileSync(String(dataBaseName))
+        const database = fs.readFileSync(String(dataBaseName) + '.json')
         const JsonData = JSON.parse(database)
         const Ct = JSON.parse(fs.readFileSync(String(type) + '.json'))
 
-        Ct.Template.data.name = String(chalkName)
 
-        Ct.Template.chalk[0] = colums
+        if (String(type).toUpperCase() == 'TABLE') {
+            if (!colums) {
+                return console.log('please provide at least one column')
+            }
 
-        JsonData.data.chalkName = Ct.Template
+            Ct.Template.data.name = String(chalkName)
 
-        JsonData.DBta.Chalks = JsonData.DBta.Chalks + 1
+            Ct.Template.chalk[0] = colums
 
-        FF.saveFile('DB.json', JSON.stringify(JsonData))
+            JsonData.data.chalkName = Ct.Template
+
+            JsonData.DBta.Chalks = JsonData.DBta.Chalks + 1
+
+        } else if (String(type).toUpperCase() == 'OBJECT') {
+            // some code here
+        } else if (String(type).toUpperCase() == 'KEY-VALUE') {
+
+        }
+
+
+
+        FF.saveFile(String(dataBaseName) + '.json', JSON.stringify(JsonData))
+        console.log('chalk created')
     }
 }
 
