@@ -1,6 +1,22 @@
 {
     "DBta": {
-        "Chalks": 0
+        "Chalks": 2
     },
-    "data": {}
+    "data": {
+        "chalk": [
+            [
+                "name",
+                "email",
+                "address"
+            ],
+            {
+                "index": 1
+            }
+        ],
+        "data": {
+            "type": "table",
+            "numOfCols": 1,
+            "name": "costomers"
+        }
+    }
 }

@@ -1,3 +1,7 @@
 import create from "./create/create.js"
 
-create.createDataBase('DB')
+create.createChalk('Table', 'DB', 'costomers', [
+    'name',
+    'email',
+    'address'
+])

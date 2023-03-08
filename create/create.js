@@ -20,6 +20,8 @@ const create = {
 
             Ct.Template.chalk[0] = colums
 
+            Ct.Template.data
+
             JsonData.data.chalkName = Ct.Template
 
             JsonData.DBta.Chalks = JsonData.DBta.Chalks + 1
